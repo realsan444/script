@@ -1,0 +1,255 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Made by sanjeesh";
+                    })
+			game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Made by sanjeesh";
+			Duration = 9999999,
+			Button1 = "10/10",
+			Button2 = "5/10"
+                    })
+print("thanks for using boss hub")
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Boss HUB👑", "BloodTheme")
+-------------------------------------------------------------------------------
+--MAIN
+local MainTAB = Window:NewTab("Main")
+local MainSECTION = MainTAB:NewSection("CREDITS")
+MainSECTION:NewLabel("Sanjeesh - owner/gui deisgn/scripts and buttons")
+MainSECTION:NewLabel("(WEBSITE) KavoLibary --the buttons and ui and buttons")
+local UpdatesSECTION = MainTAB:NewSection("UPDATES")
+UpdatesSECTION:NewLabel(" Update: (1.0.0) 3/01/2023 created exploit")
+UpdatesSECTION:NewLabel("Update: (1.0.1 BETA) Added super human infinite yield sit, walkspeed changer")
+UpdatesSECTION:NewLabel("Update 1.0.2 Added Hotel E, superman, and more")
+UpdatesSECTION:NewLabel("upd 1.0.3 Added Btools in tools")
+UpdatesSECTION:NewLabel("upd 1.0.4 Added teleport but better")
+MainSECTION:NewKeybind("Keybind = f", "When you press that letter it closes the UI", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+-------------------------------------------------------------------------------
+--HUMANOID TAB
+local HumanoidTAB = Window:NewTab("Humanoid")
+local HumanoidSECTION = HumanoidTAB:NewSection("HUMANOID/SPEED")
+HumanoidSECTION:NewButton("Sit", "Makes you sit", function()
+    game.Players.LocalPlayer.Character.Humanoid.Sit = true
+	game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Done";
+                    })
+end)
+
+HumanoidSECTION:NewSlider("Speedandjump", "600 = max", 600, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Done";
+                    })
+end)
+HumanoidSECTION:NewButton("Set normal speed", "[Content Deleted]", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Done";
+                    })
+end)
+HumanoidSECTION:NewButton("Set JumpPower", "[Content Deleted]", function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+	game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Done";
+                    })
+end)
+
+HumanoidSECTION:NewToggle("Super-Human", "Credits: 1-f0 makes ur self a super human!!!!", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+			game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Done";
+                    })
+    else
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+			game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Done";
+                    })
+    end
+end)
+HumanoidSECTION:NewSlider("Walkspeed", "changes ur walkspeed 500 = max", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Done";
+                    })
+end)
+HumanoidSECTION:NewToggle("Super-Man", "Credits: 1-f0 makes ur self a super man!!!!", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 500
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 240
+		game.Players.LocalPlayer.Character.Humanoid.Sit = true
+			game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Done";
+                    })
+    else
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+			game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Done";
+                    })
+    end
+end)
+HumanoidSECTION:NewTextBox("Speed", "Changed ur speed 9999999 = max Lol jk thers no limit LOOL", function(txt)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Done";
+                    })
+end)
+HumanoidSECTION:NewTextBox("JumpPower", "change ur jp ", function(txt)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = txt
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Done";
+                    })
+end)
+HumanoidSECTION:NewTextBox("SpeedAndJumpPower", "change ur jp and speed ", function(txt)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = txt
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Done";
+                    })
+end)
+HumanoidSECTION:NewSlider("JumpPower", "changes ur jp 500 = max", 500, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Done";
+                    })
+end)
+HumanoidSECTION:NewToggle("Super-Super-Man", "cred", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 999
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 999
+			game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Done";
+                    })
+    else
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+			game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Done";
+                    })
+    end
+end)
+-------------------------------------------------------------------------------
+--scripts tab.
+local ScriptsTAB = Window:NewTab("Scripts")
+local ScriptsSECTION = ScriptsTAB:NewSection("Scripts:")
+ScriptsSECTION:NewButton("Infinite Yield", "Loads infinite yield", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Done loading";
+                    })
+end)
+ScriptsSECTION:NewTextBox("Teleport to someone", "include full user (real user)", function(txt)
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local pl2 = txt
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+
+pl.CFrame = game.Players[pl2].Character.HumanoidRootPart.CFrame
+end)
+ScriptsSECTION:NewButton("Teleport But Better", "you dont need full user for this (;", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/realsan444/TelepportSCript-by-san/main/COOL"))();
+		game:GetService("StarterGui"):SetCore("SendNotification",{
+            Title = "BOSS HUB";
+            Text = "Done";
+                    })
+end)
+
+
+
+local ToolsTAB = Window:NewTab("Tools")
+local ToolsSECTION = ToolsTAB:NewSection("Tools:")
+ToolsSECTION:NewButton("btools", "Gives you btools", function()
+	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
+for index, child in pairs(game:GetService("Workspace"):GetChildren()) do
+   if child.ClassName == "Part" then
+       child.Locked = false
+   end
+   if child.ClassName == "MeshPart" then
+       child.Locked = false
+   end
+   if child.ClassName == "UnionOperation" then
+       child.Locked = false
+   end
+   if child.ClassName == "Model" then
+       for index, chil in pairs(child:GetChildren()) do
+           if chil.ClassName == "Part" then
+               chil.Locked = false
+           end
+           if chil.ClassName == "MeshPart" then
+               chil.Locked = false
+           end
+           if chil.ClassName == "UnionOperation" then
+               chil.Locked = false
+           end
+           if chil.ClassName == "Model" then
+               for index, childe in pairs(chil:GetChildren()) do
+                   if childe.ClassName == "Part" then
+                       childe.Locked = false
+                   end
+                   if childe.ClassName == "MeshPart" then
+                       childe.Locked = false
+                   end
+                   if childe.ClassName == "UnionOperation" then
+                       childe.Locked = false
+                   end
+                   if childe.ClassName == "Model" then
+                       for index, childeo in pairs(childe:GetChildren()) do
+                           if childeo.ClassName == "Part" then
+                               childeo.Locked = false
+                           end
+                           if childeo.ClassName == "MeshPart" then
+                               childeo.Locked = false
+                           end
+                           if childeo.ClassName == "UnionOperation" then
+                               childeo.Locked = false
+                           end
+                           if childeo.ClassName == "Model" then
+                           end
+                       end
+                   end
+               end
+           end
+       end
+   end
+end
+c = Instance.new("HopperBin", game:GetService("Players").LocalPlayer.Backpack)
+c.BinType = Enum.BinType.Hammer
+c = Instance.new("HopperBin", game:GetService("Players").LocalPlayer.Backpack)
+c.BinType = Enum.BinType.Clone
+c = Instance.new("HopperBin", game:GetService("Players").LocalPlayer.Backpack)
+c.BinType = Enum.BinType.Grab
+end)
+------------------------------------------
+local OTHERTAB = Window:NewTab("Other")
+local otherSECTION = OTHERTAB:NewSection("Other:")
+
+otherSECTION:NewButton("Reset", "makes you die", function()
+local player = game.Players.LocalPlayer
+
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
